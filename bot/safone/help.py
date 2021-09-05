@@ -24,7 +24,7 @@ from pyrogram.errors import MessageNotModified
 
 CHAT_ID = Config.CHAT_ID
 USERNAME = Config.BOT_USERNAME
-HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Video Player Bot**. \nI Can Stream Lives, YouTube Videos & Telegram Video Files On Voice Chat of Telegram Channels & Groups 😉! \n\n**Made With ❤️ By @ImSafone!** 👑"
+HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**, \n\nI'm **Video Player Bot**. \nI Can Stream Lives, YouTube Videos & Telegram Video Files On Voice Chat of Telegram Channels & Groups 😉👑"
 HELP_TEXT = """
 🏷️ --**Setting Up**-- :
 
@@ -42,8 +42,8 @@ HELP_TEXT = """
 \u2022 `/stream` - start streaming the video
 \u2022 `/endstream` - end current stream & left vc
 
-© **Powered By** : 
-**@AsmSafone | @SafoTheBot** 👑
+
+
 """
 
 
@@ -52,12 +52,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Azerbaijan_Film"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Azerbaijan_Film"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("other Channel", url="https://t.me/TuranMovies"),
+                InlineKeyboardButton("Admin Bot", url="https://t.me/ilqar_Turksoy"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
@@ -79,12 +79,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("HOW TO USE", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Azerbaijan_Film"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Azerbaijan_Film"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("other Channel", url="https://t.me/TuranMovies"),
+                InlineKeyboardButton("Admin Bot", url="https://t.me/ilqar_turksoy"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -114,12 +114,12 @@ async def start(client, message):
                 InlineKeyboardButton("HOW TO USE", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Azerbaijan_Film"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Azerbaijan_Film"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Other Chanel", url="https://t.me/TuranMovies"),
+                InlineKeyboardButton("Admin Bot", url="https://t.me/ilqar_turksoy"),
             ],
             [
                 InlineKeyboardButton("CLOSE MENU", callback_data="close"),
@@ -132,12 +132,12 @@ async def start(client, message):
 async def help(client, message):
     buttons = [
             [
-                InlineKeyboardButton("CHANNEL", url="https://t.me/AsmSafone"),
-                InlineKeyboardButton("SUPPORT", url="https://t.me/SafoTheBot"),
+                InlineKeyboardButton("CHANNEL", url="https://t.me/Azerbaijan_Film"),
+                InlineKeyboardButton("SUPPORT", url="https://t.me/Azerbaijan_Film"),
             ],
             [
-                InlineKeyboardButton("MORE BOTS", url="https://t.me/AsmSafone/173"),
-                InlineKeyboardButton("SOURCE CODE", url="https://github.com/AsmSafone/VideoPlayerBot"),
+                InlineKeyboardButton("Other Chanel", url="https://t.me/TuranMovies"),
+                InlineKeyboardButton("Admin Bot", url="https://t.me/ilqar_turksoy"),
             ],
             [
                 InlineKeyboardButton("BACK HOME", callback_data="home"),
